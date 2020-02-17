@@ -40,7 +40,7 @@ table {
 
 * {
     box-sizing: border-box;
-    /* border: 1px solid grey; */
+    border: 1px solid grey;
     /* Remove after evertyhign is in place  */
 }
 
@@ -68,7 +68,7 @@ a {
 
 .serviceHeader {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     padding: 4% 0;
     border-bottom: 1px solid black;
@@ -79,6 +79,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 2% 0;
+}
+
+nav div {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navLink {
@@ -232,4 +238,36 @@ footer a {
     text-align: center;
     font-size: 0.8rem;
     padding: 4% 0;
+}
+
+/* Tablet Style*/
+
+@media (max-width: 800px) {
+    /*body {
+        background-color: yellow;
+        
+    }FOR TESTING*/
+    nav {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    nav div {
+        width: 100%;
+    }
+    .bigPic {
+        display: none;
+    }
+}
+
+/*Phone Style*/
+
+@media (max-width: 500px) {
+    body {
+        background-color: green;
+    }
+    /*FOR TESTING*/
 }
