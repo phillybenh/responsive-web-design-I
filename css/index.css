@@ -258,8 +258,14 @@ footer a {
     nav div {
         width: 100%;
     }
-    .bigPic, .services-header-img {
+    .bigPic, .services-info-img {
         display: none;
+    }
+    .someFacts div {
+        width: 100%;
+    }
+    .rounded button {
+        width: 75px;
     }
 }
 
@@ -271,7 +277,7 @@ footer a {
     }
     FOR TESTING*/
     nav {
-        height: 22vh;
+        height: 25vh;
         display: flex;
         flex-flow: column-reverse nowrap;
         justify-content: center;
@@ -286,6 +292,9 @@ footer a {
         padding: 4% 0;
         border-bottom: 1px solid black;
     }
+    .services-header-img {
+        margin-top: 5%;
+    }
     #serviceLink, #serviceLinkService {
         border-top: 1px solid black;
         margin-top: 1%;
@@ -297,5 +306,14 @@ footer a {
     #features, #about, #services, #product, #vision {
         width: 100%;
         padding: 4% 0;
+    }
+    .serviceTwo {
+        display: felx;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        height: 40vh;
+    }
+    .serviceBox {
+        width: 100%;
     }
 }
