@@ -1,3 +1,235 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    /*border: 0;*/
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+    /* Remove after evertyhign is in place  */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.serviceHeader {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 4% 0;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.navLink {
+    width: 8%;
+    padding: 1% 0;
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.billboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8% 0;
+}
+
+.headerWords {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerWords h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.headerWords a {
+    width: 40%;
+}
+
+.serviceH2 {
+    font-size: 1.8rem;
+    padding-top: 4%;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.rounded button {
+    border-radius: 5%;
+    width: 33%;
+}
+
+.bigPic {
+    width: 40%;
+}
+
+.content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.topTwo {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+
+.serviceTwo {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+
+.serviceBox {
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.serviceBox p {
+    padding: 0 0 4% 0;
+}
+
+#features, #about {
+    width: 48%;
+}
+
+img {
+    width: 100%;
+}
+
+.bottomThree {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+
+#services, #product, #vision {
+    width: 31%;
+}
+
+.someFacts {
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.someFacts ul {
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.someFacts div {
+    width: 48%;
+}
+
+.someFacts img {
+    width: 48%;
+}
+
+footer {
+    padding: 4% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+address {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+footer a {
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 4% 0;
+}
