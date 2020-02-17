@@ -40,8 +40,8 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid grey;
-    /* Remove after evertyhign is in place  */
+    /*border: 1px solid grey;
+     Remove after evertyhign is in place  */
 }
 
 html, body {
@@ -119,7 +119,7 @@ nav div {
 }
 
 .headerWords a {
-    width: 40%;
+    width: 125px;
 }
 
 .serviceH2 {
@@ -258,7 +258,7 @@ footer a {
     nav div {
         width: 100%;
     }
-    .bigPic {
+    .bigPic, .services-header-img {
         display: none;
     }
 }
@@ -266,8 +266,36 @@ footer a {
 /*Phone Style*/
 
 @media (max-width: 500px) {
-    body {
+    /*body {
         background-color: green;
     }
-    /*FOR TESTING*/
+    FOR TESTING*/
+    nav {
+        height: 22vh;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+    }
+    nav div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .navLink {
+        width: 100%;
+        padding: 4% 0;
+        border-bottom: 1px solid black;
+    }
+    #serviceLink, #serviceLinkService {
+        border-top: 1px solid black;
+        margin-top: 1%;
+    }
+    .topTwo, .bottomThree {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    #features, #about, #services, #product, #vision {
+        width: 100%;
+        padding: 4% 0;
+    }
 }
